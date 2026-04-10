@@ -1,34 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Market Place</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
-
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid mx-5">
-      <a class="navbar-brand" href="#">Vintage</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <input class="form-control" type="search" placeholder="Search" aria-label="Search" />
+  <header class="container py-3">
+    <div class="d-flex justify-content-between align-items-center">
+      <a href="index.html" class="d-flex align-items-center text-teal fw-bold fs-4">
+        <img src="images/logos.png" alt="" width="30" class="me-2"> Vintage
+      </a>
+      <input class="form-control mx-4" type="search" placeholder="Search for items" style="max-width: 600px;">
+      <div class="d-flex align-items-center gap-2">
+        <a href="login.html" class="btn btn-outline-teal px-4">Login</a>
+        <a href="signup.html" class="btn btn-teal px-4">Sign up</a>
+        <span class="ms-3 border-start ps-3">EN v</span>
       </div>
-      <button type="button" class="btn btn-info">Login</button>
-      <button type="button" class="btn btn-info">Sign up</button>
     </div>
-  </nav>
+  </header>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
+  <section class="hero">
+    <div class="container">
+      <div class="hero-card">
+        <h3 class="fw-bold mb-4">Ready to declutter<br>you closet?</h3>
+        <a href="products.html" class="btn btn-teal w-100 py-2">Shop Now</a>
+      </div>
+    </div>
+  </section>
+
+  <main class="container mt-5">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <h5 class="fw-bold m-0">Popular items</h5>
+      <a href="products.html" class="text-teal fs-6">See all</a>
+    </div>
+    <div class="row gx-3 mb-5">
+      <div class="col-2">
+        <a href="detail.html" class="product-card">
+          <img src="images/p1.jpg" class="product-img">
+          <p class="text-teal m-0 fw-bold">Rp200.000</p>
+          <p class="text-muted small m-0 text-truncate">Vintage chicago cubs white...</p>
+          <div class="d-flex justify-content-between small text-muted mt-1">
+            <span>8 / M</span><span>♡ 12</span>
+          </div>
+        </a>
+      </div>
+      <div class="col-2">
+        <a href="detail.html" class="product-card">
+          <img src="images/p2.jpg" class="product-img">
+          <p class="text-teal m-0 fw-bold">Rp200.000</p>
+          <p class="text-muted small m-0 text-truncate">Red Crewneck</p>
+          <div class="d-flex justify-content-between small text-muted mt-1">
+            <span>8 / M</span><span>♡ 12</span>
+          </div>
+        </a>
+      </div>
+      <div class="col-2">
+        <a href="detail.html" class="product-card">
+          <img src="images/p3.jpg" class="product-img">
+          <p class="text-teal m-0 fw-bold">Rp200.000</p>
+          <p class="text-muted small m-0 text-truncate">Necklace</p>
+          <div class="d-flex justify-content-between small text-muted mt-1">
+            <span>8 / M</span><span>♡ 12</span>
+          </div>
+        </a>
+      </div>
+      <div class="col-2">
+        <a href="detail.html" class="product-card">
+          <img src="images/p4.jpg" class="product-img">
+          <p class="text-teal m-0 fw-bold">Rp200.000</p>
+          <p class="text-muted small m-0 text-truncate">Necklace</p>
+          <div class="d-flex justify-content-between small text-muted mt-1">
+            <span>8 / M</span><span>♡ 12</span>
+          </div>
+        </a>
+      </div>
+      <div class="col-2">
+        <a href="detail.html" class="product-card">
+          <img src="images/p5.jpg" class="product-img">
+          <p class="text-teal m-0 fw-bold">Rp200.000</p>
+          <p class="text-muted small m-0 text-truncate">Necklace</p>
+          <div class="d-flex justify-content-between small text-muted mt-1">
+            <span>8 / M</span><span>♡ 12</span>
+          </div>
+        </a>
+      </div>
+      <div class="col-2">
+        <a href="products.html">
+          <div class="see-all-card">
+            <span>See All<br>Product</span>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <h5 class="fw-bold mb-3">Shop by brand</h5>
+    <div class="mb-5">
+      <a href="products.html" class="brand-box">Vans</a>
+      <a href="products.html" class="brand-box">Bohoo</a>
+      <a href="products.html" class="brand-box">Mango</a>
+      <a href="products.html" class="brand-box">Reebok</a>
+      <a href="products.html" class="brand-box">Converse</a>
+      <a href="products.html" class="brand-box">Sandro</a>
+      <a href="products.html" class="brand-box">Nike</a>
+      <a href="products.html" class="brand-box">Adidas</a>
+      <a href="products.html" class="brand-box">Dior</a>
+      <a href="products.html" class="brand-box">Puma</a>
+      <a href="products.html" class="brand-box">Zara</a>
+      <a href="products.html" class="brand-box">Bershka</a>
+      <a href="products.html" class="brand-box">American Eagle</a>
+    </div>
+
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <h5 class="fw-bold m-0">New Product</h5>
+      <a href="products.html" class="text-teal fs-6">See all</a>
+    </div>
+    <div class="row gx-3 mb-5">
+      <div class="col-2">
+        <a href="detail.html" class="product-card">
+          <img src="images/p6.jpg" class="product-img">
+          <p class="text-teal m-0 fw-bold">Rp200.000</p>
+          <p class="text-muted small m-0 text-truncate">Vintage chicago cubs white...</p>
+          <div class="d-flex justify-content-between small text-muted mt-1">
+            <span>8 / M</span><span>♡ 12</span>
+          </div>
+        </a>
+      </div>
+      <div class="col-2">
+        <a href="detail.html" class="product-card">
+          <img src="images/p7.jpg" class="product-img">
+          <p class="text-teal m-0 fw-bold">Rp200.000</p>
+          <p class="text-muted small m-0 text-truncate">Red Crewneck</p>
+          <div class="d-flex justify-content-between small text-muted mt-1">
+            <span>8 / M</span><span>♡ 12</span>
+          </div>
+        </a>
+      </div>
+      <div class="col-2">
+        <a href="detail.html" class="product-card">
+          <img src="images/p8.jpg" class="product-img">
+          <p class="text-teal m-0 fw-bold">Rp200.000</p>
+          <p class="text-muted small m-0 text-truncate">Necklace</p>
+          <div class="d-flex justify-content-between small text-muted mt-1">
+            <span>8 / M</span><span>♡ 12</span>
+          </div>
+        </a>
+      </div>
+      <div class="col-2">
+        <a href="detail.html" class="product-card">
+          <img src="images/p9.jpg" class="product-img">
+          <p class="text-teal m-0 fw-bold">Rp200.000</p>
+          <p class="text-muted small m-0 text-truncate">Necklace</p>
+          <div class="d-flex justify-content-between small text-muted mt-1">
+            <span>8 / M</span><span>♡ 12</span>
+          </div>
+        </a>
+      </div>
+      <div class="col-2">
+        <a href="detail.html" class="product-card">
+          <img src="images/p10.jpg" class="product-img">
+          <p class="text-teal m-0 fw-bold">Rp200.000</p>
+          <p class="text-muted small m-0 text-truncate">Necklace</p>
+          <div class="d-flex justify-content-between small text-muted mt-1">
+            <span>8 / M</span><span>♡ 12</span>
+          </div>
+        </a>
+      </div>
+      <div class="col-2">
+        <a href="products.html">
+          <div class="see-all-card">
+            <span>See All<br>New Product</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-3">
+          <h6 class="fw-bold mb-3">Vintage</h6>
+          <a href="#">About us</a>
+          <a href="#">Sustainability</a>
+          <a href="#">Blog</a>
+          <a href="#">Advertising</a>
+        </div>
+        <div class="col-3">
+          <h6 class="fw-bold mb-3">Discover</h6>
+          <a href="#">How it works</a>
+          <a href="#">Help center</a>
+          <a href="#">Infoboard</a>
+          <a href="#">Mobile apps</a>
+        </div>
+        <div class="col-3">
+          <h6 class="fw-bold mb-3">Help</h6>
+          <a href="#">Help center</a>
+          <a href="#">Buying</a>
+          <a href="#">Trust & Safety</a>
+        </div>
+        <div class="col-3">
+          <h6 class="fw-bold mb-3">Community</h6>
+          <a href="#">Forum</a>
+        </div>
+      </div>
+      <hr>
+      <div class="d-flex justify-content-between align-items-center">
+        <div>
+          <span class="me-3">WA</span>
+          <span class="me-3">IG</span>
+          <span>IN</span>
+        </div>
+        <div class="small">© Vintage, 2023</div>
+      </div>
+    </div>
+  </footer>
 </body>
-
 </html>

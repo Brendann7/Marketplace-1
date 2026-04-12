@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main class="login-card container">
+        <div class="login-border">
+            <div class="text-muted mb-3">
+                <h4>Login</h4>
+                <p>Enter your details below</p>
+            </div>
+            <div class="mb-3 input-style">
+                <label for="exampleFormControlInput1" class="form-label">Email <span>*</span></label>
+                <input type="email" class="form-control input-style" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="mb-3 input-style">
+                <label for="exampleFormControlInput1" class="form-label">Email <span>*</span></label>
+                <div class="input-group mb-3">
+                    <input type="password" id="passwordField" class="form-control" placeholder="Password"
+                        aria-label="Password" aria-describedby="basic-addon2">
+                    <span class="input-group-text" id="spanIcon" onclick="togglePassword()"><i class="fa-solid fa-eye"
+                            id="toggleIcon"></i></span>
+                </div>
+            </div>
+
+            <a href="#" class="btn btn-teal d-flex justify-content-center">Continue</a>
+        </div>
+    </main>
+    <script>
+        function togglePassword() {
+            const passwordField = document.getElementById("passwordField");
+            const toggleIcon = document.getElementById("toggleIcon");
+
+            if (passwordField.type === "password") {
+                passwordField.type = "text";
+                toggleIcon.className = "fa-solid fa-eye-slash"; // Change icon to 'hide' state
+            } else {
+                passwordField.type = "password";
+                toggleIcon.className = "fa-solid fa-eye"; // Change icon to 'show' state
+            }
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/0c6264d708.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

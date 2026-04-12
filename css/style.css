@@ -109,3 +109,27 @@ a {
   border-color: rgba(255, 255, 255, 0.2);
   margin: 30px 0 20px 0;
 }
+
+.login-card {
+  max-width: fit-content;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-border {
+  border: #096b68 solid 1px;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.input-style {
+  display: block;
+  width: 516px;
+  max-width: 100%;
+}
+
+label span {
+  color: red;
+}

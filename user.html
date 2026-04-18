@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Market Place</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="container py-3">
+    <div class="d-flex justify-content-between align-items-center">
+      <a href="index.html" class="d-flex align-items-center text-teal fw-bold fs-4">
+        <img src="images/logos.png" alt="" width="30" class="me-2"> Vintage
+      </a>
+      <input class="form-control d-none d-md-none d-lg-flex" type="search" placeholder="Search for items"
+        style="max-width: 600px;">
+      <div class="d-flex align-items-center gap-2 d-none d-md-none d-lg-flex">
+        <a href="login.html" class="btn btn-outline-teal px-4">Login</a>
+        <a href="signup.html" class="btn btn-teal px-4">Sign up</a>
+        <span class="ms-3 border-start ps-3">EN v</span>
+      </div>
+      <i class="fa-solid fa-bars d-lg-none"></i>
+    </div>
+  </header>
+
+  <main class="main container mt-5 mb-5">
+    <div class="card shadow-sm border-0">
+      <div class="card-body p-4 p-md-5">
+        <div class="row">
+
+          <div class="col-12 col-md-3 mb-5 mb-md-0">
+            <h4 class="fw-bold mb-4">Settings</h4>
+            <div class="d-flex flex-column gap-3 ms-md-3">
+              <a href="#" class="fw-bold text-dark">Profile details</a>
+              <a href="#" class="text-secondary">Change Password</a>
+              <a href="#" class="text-secondary">Transaction History</a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-9 border-start ps-md-5">
+            <p class="text-secondary mb-4">Edit Profile</p>
+
+            <div class="row align-items-center mb-4">
+              <div class="col-12 col-sm-3 mb-2 mb-sm-0">
+                <p class="fw-bold mb-0">Photo</p>
+              </div>
+              <div class="col-12 col-sm-9 d-flex align-items-center flex-wrap gap-3">
+                <div class="rounded-circle d-flex justify-content-center align-items-center"
+                  style="width: 50px; height: 50px; background-color: #e0f7fa;">
+                  <i class="fa-solid fa-user text-teal fs-4"></i>
+                </div>
+                <button class="btn btn-light border px-3">Choose</button>
+                <span class="text-muted small">JPG, JPEG or PNG, 1 MB max.</span>
+                <i class="fa-solid fa-trash-can text-secondary ms-auto" style="cursor: pointer;"></i>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label fw-bold">Full name</label>
+              <input type="text" class="form-control" value="Jack Daniel">
+            </div>
+            <div class="mb-3">
+              <label class="form-label fw-bold">Username</label>
+              <input type="text" class="form-control" value="jackdaniel">
+            </div>
+            <div class="mb-4">
+              <label class="form-label fw-bold">Email</label>
+              <input type="email" class="form-control" value="jack@email.com">
+            </div>
+
+            <div class="d-flex justify-content-end mt-4">
+              <button class="btn btn-teal px-4 py-2">Update Profile</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-12 col-lg-3 text-center align-items-center text-lg-start align-items-lg-start">
+          <h6 class="fw-bold mb-3">Vintage</h6>
+          <a href="#">About us</a>
+          <a href="#">Sustainability</a>
+          <a href="#">Blog</a>
+          <a href="#">Advertising</a>
+        </div>
+        <div class="col-12 col-lg-3 text-center align-items-center text-lg-start align-items-lg-start">
+          <h6 class="fw-bold mb-3">Discover</h6>
+          <a href="#">How it works</a>
+          <a href="#">Help center</a>
+          <a href="#">Infoboard</a>
+          <a href="#">Mobile apps</a>
+        </div>
+        <div class="col-12 col-lg-3 text-center align-items-center text-lg-start align-items-lg-start">
+          <h6 class="fw-bold mb-3">Help</h6>
+          <a href="#">Help center</a>
+          <a href="#">Buying</a>
+          <a href="#">Trust & Safety</a>
+        </div>
+        <div class="col-12 col-lg-3 text-center align-items-center text-lg-start align-items-lg-start">
+          <h6 class="fw-bold mb-3">Community</h6>
+          <a href="#">Forum</a>
+        </div>
+      </div>
+      <hr>
+      <div class="d-flex justify-content-between align-items-center">
+        <div>
+          <span class="me-3">WA</span>
+          <span class="me-3">IG</span>
+          <span>IN</span>
+        </div>
+        <div class="small">© Vintage, 2023</div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://kit.fontawesome.com/0c6264d708.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

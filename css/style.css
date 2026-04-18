@@ -6,6 +6,7 @@
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 .text-teal {
@@ -132,4 +133,15 @@ a {
 
 label span {
   color: red;
+}
+
+.image-detail {
+  max-height: 800px;
+}
+
+.profile {
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
 }
